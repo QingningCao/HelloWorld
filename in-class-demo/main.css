@@ -7,3 +7,7 @@ body {
     justify-content: center;
     align-items: stretch;
 }
+
+.item {
+    margin: 5px;
+}
