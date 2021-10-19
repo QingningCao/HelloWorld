@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
@@ -34,6 +34,6 @@ h1 {
 
 @media (max-width: 768px) {
   .container {
-    background: pink;
+    background: powderblue;
   }
 }
