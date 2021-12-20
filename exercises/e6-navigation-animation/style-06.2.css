@@ -1,0 +1,23 @@
+.square {
+    width: 150px;
+    height: 150px;
+    background: tomato;
+  }
+  
+  /* write the animation */
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(800PX);
+    }
+    100% {
+      transform: translateX(0);
+      
+    }
+  }
+  .run-animation {
+    animation: slide 5s;
+    animation-iteration-count: 5;
+  }
