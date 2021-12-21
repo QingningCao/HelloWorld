@@ -1,7 +1,7 @@
 * {
-    margin: 0;
+    margin: 10pt;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
   }
   
   html, body {
@@ -9,46 +9,42 @@
   }
   
   .container {
-    background-color: lemonchiffon;
+    background-color: white;
     height: 100%;
   }
   
   header {
-    height: 20%;
-    background-color: tomato;
+    height: 60%;
+    background-color: black;
+    color: white;
+    text-align: center;
   }
   
-  nav, footer {
-    height: 10%;
-    background-color: aquamarine;
+  nav {
+    height: 5%;
+    background-color: white;
   }
-  
+
+  ul.menu {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    
+    list-style: none;
+    line-height: 0px;
+  }
+
+  .menu a {
+    color:goldenrod;
+    text-decoration: none;
+  }
+
   main {
-    height: 90%;
-    background-color: blanchedalmond;
+    height:20%;
+    background-color: black;
+    color: white;
+    text-align: center;
   }
   
-  aside {
-    width: 20%;
-    height: 100%;
-    background-color: coral;
-    display: inline-block;
-    /*float: left;*/
-  }
+ 
   
-  section {
-    width: 60%;
-    height: 100%;
-    background-color: darkseagreen;
-    display: inline-block;
-    /*float: left;*/
-  }
-  
-  .box {
-    position: fixed;
-    top: 100px;
-    right: 0;
-    width: 300px;
-    height: 300px;
-    background-color: gold;
-  }
