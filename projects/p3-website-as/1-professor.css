@@ -66,11 +66,3 @@
     height: 40%;
     background-color: black;
   }
-
-  .footerflex{
-      display: flex;
-      flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: "100%";
-  }
