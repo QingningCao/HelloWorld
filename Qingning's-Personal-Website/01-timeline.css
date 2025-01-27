@@ -13,13 +13,14 @@ body {
 .timeline-container {
   display: flex;
   justify-content: center;
+  height: 100vh;
+  align-items: center;
 }
 
 .timeline {
   position: relative;
   width: 60%;
-  max-width: 800px;
-  height: 600px;
+  height: 80%;
 }
 
 .main-line {
@@ -35,7 +36,7 @@ body {
 .event {
   position: absolute;
   z-index: 1;
-  width: 150px;
+  width: 200px;
   text-align: center;
 }
 
@@ -47,11 +48,11 @@ body {
 }
 
 .education {
-  left: -200px;
+  left: -250px;
 }
 
 .internship {
-  left: -200px;
+  left: -250px;
 }
 
 .work {
