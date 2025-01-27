@@ -27,6 +27,7 @@
 
   ul.menu {
     display: flex;
+    width: 60%;
     flex-wrap: nowrap;
     justify-content: space-around;
     
