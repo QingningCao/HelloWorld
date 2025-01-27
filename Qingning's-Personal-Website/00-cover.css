@@ -6,11 +6,14 @@
   
   html, body {
     height: 100%;
+    margin: 20px;  /* Adds margin around the entire page */
+    background-color: white;
   }
   
   .container {
     background-color: white;
     height: 100%;
+    margin: 0;
   }
   
   header {
@@ -28,7 +31,11 @@
     font-size: 3rem;  /* Larger text on desktop */
     letter-spacing: 0.1em;
   }
-  
+
+  h1 span {
+    margin-right: 10px;  /* Adjust this value as needed */
+  }
+
   @media (max-width: 768px) {
     h1 {
       font-size: 2rem;  /* Smaller text on mobile */
@@ -36,23 +43,25 @@
   }
 
   nav {
-    padding: 10px 0;
+    padding: 20px 0;
+    min-height: 60px;
     background-color: white;
   }
 
   ul.menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     list-style: none;
-    line-height: 0;
+    margin: 0;
+   padding: 0;
   }
 
   .menu a {
     color:black;
     text-decoration: none;
-    padding: 10px 15px;
-    font-size: 1.2rem;
+    padding: 10px 20px;
+    font-size: 1rem;
   }
 
   @media (max-width: 768px) {
@@ -63,7 +72,7 @@
   
     .menu a {
       padding: 15px 0;  /* More space for clickable items */
-      font-size: 1.5rem; /* Increase font size for better visibility */
+      font-size: 1.2rem; /* Increase font size for better visibility */
     }
   }
 
