@@ -36,13 +36,14 @@
   }
 
   nav {
-    height: 5%;
+    padding: 10px 0;
     background-color: white;
   }
 
   ul.menu {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     list-style: none;
     line-height: 0;
   }
