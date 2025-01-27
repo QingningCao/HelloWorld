@@ -1,68 +1,94 @@
 * {
-    margin: 10pt;
-    padding: 0;
-    box-sizing: content-box;
-  }
-  
-  html, body {
-    height: 100%;
-  }
-  
-  .container {
-    background-color: white;
-    height: 100%;
-  }
-  
-  header {
-    height: 6%;
-    background-color: black;
-    color: white;
-    text-align: center;
-  }
-  
-  nav {
-    height: 3%;
-    background-color: white;
-  }
-  
-  ul.menu {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    
-    list-style: none;
-    line-height: 0px;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .menu a {
-    color:black;
-    text-decoration: none;
-  }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
 
+.timeline-container {
+  display: flex;
+  justify-content: center;
+}
 
-  main {
-    height: 40%;
-    background-color: black;
-  }
-  
-  aside {
-    width: 31%;
-    height: 90%;
-    background-color: black;
-    display: inline-block;
-    color:white
-  }
-  
-  section {
-    width: 31%;
-    height: 90%;
-    background-color: black;
-    display: inline-block;
-    color:black
-    
-  }
+.timeline {
+  position: relative;
+  width: 60%;
+  max-width: 800px;
+  height: 600px;
+}
 
-  footer {
-    height: 40%;
-    background-color: black;
-  }
+.main-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: #333;
+  z-index: 0;
+}
+
+.event {
+  position: absolute;
+  z-index: 1;
+  width: 150px;
+  text-align: center;
+}
+
+.event-content {
+  background-color: #fff;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+
+.education {
+  left: -200px;
+}
+
+.internship {
+  left: -200px;
+}
+
+.work {
+  left: 50%;
+}
+
+.date {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+p {
+  font-size: 14px;
+  color: #555;
+}
+
+.event.education:nth-child(1) {
+  top: 5%;
+}
+
+.event.education:nth-child(2) {
+  top: 20%;
+}
+
+.event.internship:nth-child(3) {
+  top: 40%;
+}
+
+.event.internship:nth-child(4) {
+  top: 55%;
+}
+
+.event.internship:nth-child(5) {
+  top: 70%;
+}
+
+.event.work {
+  top: 85%;
+}
