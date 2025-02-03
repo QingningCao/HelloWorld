@@ -6,7 +6,8 @@
   }
 
   body {
-    background: black;
+    background: olivedrab;
+    margin: 20px;
   }
 
   .timeline {
@@ -19,7 +20,70 @@
     padding: 10px 50px;
     position: relative;
     width: 50%;
-    background: black
+    background: olivedrab;
   }
 
-  
+  .text-box {
+    padding: 20px 30px;
+    position: relative;
+    background: white;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+
+  .left-container {
+    left: 0;
+  }
+
+  .left-container-CU {
+    left: 0;
+    height: 200%
+  }
+
+  .right-container {
+    left: 50%;
+  }
+
+  .timeline::after {
+    content:'';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: red;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  .text-box h2 {
+    font-weight: 600;
+  }
+  .text-box small {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  .left-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid white;
+    right: -15px;
+  }
+
+  .right-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid white;
+    left: -15px;
+  }
